@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Accra, Ghana",
+    value: "Kampala, Uganda",
     href: null,
   },
 ];
