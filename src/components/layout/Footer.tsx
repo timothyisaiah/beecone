@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import logoGold from "@/../public/images/logo-gold.png";
 
 const footerLinks = {
   shop: [
@@ -87,7 +88,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-1.5">
               <Image
-                src="/images/logo-gold.png"
+                src={logoGold}
                 alt="Beecone"
                 width={32}
                 height={32}

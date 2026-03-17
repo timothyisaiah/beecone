@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { ShoppingBag, Menu, X } from "lucide-react";
+import logoDark from "@/../public/images/logo-dark.png";
 
 const navLinks = [
   { href: "/shop", label: "Shop" },
@@ -24,7 +25,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-1.5">
             <Image
-              src="/images/logo-dark.png"
+              src={logoDark}
               alt="Beecone"
               width={36}
               height={36}
