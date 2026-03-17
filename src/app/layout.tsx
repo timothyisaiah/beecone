@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Watermark from "@/components/layout/Watermark";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -45,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={montserrat.variable}>
       <body className="min-h-screen flex flex-col antialiased">
+        <Watermark />
         <CartProvider>
           <Navbar />
           <main className="flex-1 pt-16">{children}</main>

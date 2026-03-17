@@ -27,3 +27,54 @@
     background-color: #fffbf5;
   }
 }
+
+/* Watermark overlay */
+.watermark-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.watermark-layer {
+  position: absolute;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background-repeat: repeat;
+  background-size: 220px 220px;
+}
+
+.watermark-dark {
+  background-image: url("/images/logo-dark.png");
+  opacity: 0.035;
+  transform: rotate(-18deg);
+  animation: watermark-drift-1 120s linear infinite;
+}
+
+.watermark-gold {
+  background-image: url("/images/logo-gold.png");
+  opacity: 0.045;
+  transform: rotate(12deg);
+  background-position: 110px 110px;
+  animation: watermark-drift-2 160s linear infinite;
+}
+
+@keyframes watermark-drift-1 {
+  from {
+    transform: rotate(-18deg) translate(0, 0);
+  }
+  to {
+    transform: rotate(-18deg) translate(-220px, -220px);
+  }
+}
+
+@keyframes watermark-drift-2 {
+  from {
+    transform: rotate(12deg) translate(0, 0);
+  }
+  to {
+    transform: rotate(12deg) translate(220px, -220px);
+  }
+}
