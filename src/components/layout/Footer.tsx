@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logoGold from "@/../public/images/logo-gold.png";
+import logoGoldLong from "@/../public/images/logo-gold-long.png";
 
 const footerLinks = {
   shop: [
@@ -88,15 +88,12 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-1.5">
               <Image
-                src={logoGold}
+                src={logoGoldLong}
                 alt="Beecone"
-                width={32}
-                height={32}
-                className="h-8 w-8 object-contain"
+                width={100}
+                height={100}
+                className="h-20 w-40 object-contain"
               />
-              <span className="font-serif text-lg font-bold text-white tracking-tight">
-                BEECONE
-              </span>
             </Link>
             <p className="mt-3 text-sm text-stone-400 leading-relaxed">
               Sweetness from Within. Premium, natural honey sourced ethically

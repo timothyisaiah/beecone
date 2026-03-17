@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { ShoppingBag, Menu, X } from "lucide-react";
-import logoDark from "@/../public/images/logo-dark.png";
+import logoDarkLong from "@/../public/images/logo-dark-long.png";
 
 const navLinks = [
   { href: "/shop", label: "Shop" },
@@ -23,17 +23,14 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1.5">
+          <Link href="/" className="flex items-center items-stretch gap-1.5">
             <Image
-              src={logoDark}
+              src={logoDarkLong}
               alt="Beecone"
-              width={36}
-              height={36}
-              className="h-9 w-9 object-contain"
+              width={100}
+              height={100}
+              className="h-40 w-40 object-contain"
             />
-            <span className="font-serif text-xl font-bold text-stone-900 tracking-tight">
-              BEECONE
-            </span>
           </Link>
 
           {/* Desktop nav */}
