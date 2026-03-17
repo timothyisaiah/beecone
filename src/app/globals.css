@@ -47,14 +47,12 @@
 }
 
 .watermark-dark {
-  background-image: url("/images/logo-dark.png");
   opacity: 0.035;
   transform: rotate(-18deg);
   animation: watermark-drift-1 120s linear infinite;
 }
 
 .watermark-gold {
-  background-image: url("/images/logo-gold.png");
   opacity: 0.045;
   transform: rotate(12deg);
   background-position: 110px 110px;
