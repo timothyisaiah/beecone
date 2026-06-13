@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import hero from "@/../public/images/Hero.jpeg";
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1920&q=80"
+          src={hero}
           alt="Golden honey flowing"
           fill
           className="object-cover"

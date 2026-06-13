@@ -1,4 +1,8 @@
 import { BlogPost } from "@/types";
+import honeyScience from "@/../public/images/honey-science.png";
+import sustainableHoney from "@/../public/images/sustainable-honey.png";
+import honeyVsSugar from "@/../public/images/honey-vs-sugar.png";
+import recipes from "@/../public/images/recipes.png";
 
 export const blogPosts: BlogPost[] = [
   {
@@ -52,8 +56,7 @@ A spoonful of honey before bed may help you sleep better. It restocks your liver
 ---
 
 *At Beecone, we ensure all our honey is raw and unprocessed to preserve these incredible natural benefits. Explore our range of pure honeys and experience the sweetness from within.*`,
-    coverImage:
-      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800&q=80",
+    coverImage: honeyScience?.src,
     category: "benefits",
     author: "Dr. Abena Owusu",
     date: "2026-01-15",
@@ -125,8 +128,7 @@ Spread butter on warm toast. Drizzle generously with cinnamon honey. Simple, ele
 ---
 
 *Try these recipes with Beecone's range of premium honeys and discover new dimensions of flavor in your everyday cooking.*`,
-    coverImage:
-      "https://images.unsplash.com/photo-1471943311424-646960669fbc?w=800&q=80",
+    coverImage: recipes?.src,    
     category: "recipes",
     author: "Chef Kwame Appiah",
     date: "2026-02-10",
@@ -180,8 +182,7 @@ By 2027, Beecone aims to:
 ---
 
 *Every jar of Beecone honey represents our commitment to a sweeter, more sustainable world. Thank you for being part of this journey.*`,
-    coverImage:
-      "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
+    coverImage: sustainableHoney?.src,
     category: "sustainability",
     author: "Isaiah Mensah",
     date: "2026-03-01",
@@ -240,8 +241,7 @@ Replacing sugar with honey in your diet doesn't have to be complicated:
 ---
 
 *Beecone's range of pure, raw honeys makes the switch to natural sweetness easy and delicious. Your taste buds — and your body — will thank you.*`,
-    coverImage:
-      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800&q=80",
+    coverImage: honeyVsSugar?.src,
     category: "benefits",
     author: "Dr. Abena Owusu",
     date: "2026-02-20",

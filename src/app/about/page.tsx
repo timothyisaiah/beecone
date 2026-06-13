@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, Leaf, Shield, Users } from "lucide-react";
+import bee40060G from "@/../public/images/Bee-400-60g.jpeg";
 
 export const metadata: Metadata = {
   title: "About",
@@ -103,7 +104,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800&q=80"
+                src={bee40060G}
                 alt="Pure golden honey"
                 fill
                 className="object-cover"

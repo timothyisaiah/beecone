@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import healthyHives from "@/../public/images/healthy-hives.jpeg";
 
 export default function BrandStory() {
   return (
@@ -9,7 +10,7 @@ export default function BrandStory() {
           {/* Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80"
+              src={healthyHives}
               alt="Beekeeper tending to hives"
               fill
               className="object-cover"
