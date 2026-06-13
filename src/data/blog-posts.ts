@@ -1,8 +1,8 @@
 import { BlogPost } from "@/types";
-import honeyScience from "@/../public/images/honey-science.png";
-import sustainableHoney from "@/../public/images/sustainable-honey.png";
-import honeyVsSugar from "@/../public/images/honey-vs-sugar.png";
-import recipes from "@/../public/images/recipes.png";
+import honeyScience from "@/../public/images/honey-science.jpeg";
+import sustainableHoney from "@/../public/images/sustainable-honey.jpeg";
+import honeyVsSugar from "@/../public/images/honey-vs-sugar.jpeg";
+import recipes from "@/../public/images/recipes.jpeg";
 
 export const blogPosts: BlogPost[] = [
   {
